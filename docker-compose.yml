@@ -14,3 +14,17 @@ services:
       # machine:container
       - 3001:3000
     command: yarn start
+    env_file:
+      - ./env/dev.env
+
+  devdb:
+    image: mysql:5.7
+    # keeps db data local and easy to reset
+    volumes:
+      - ./devdb:/var/lib/mysql
+      # conf.d is a folder, and it reads whatever `.cnf` files are in there
+      - ./env:/etc/mysql/conf.d
+    ports:
+      - 3306:3306
+    env_file:
+      - ./env/dev.env
