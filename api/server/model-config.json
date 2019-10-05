@@ -14,7 +14,8 @@
     ]
   },
   "User": {
-    "dataSource": "mysqlDb"
+    "dataSource": "mysqlDb",
+    "public": false
   },
   "AccessToken": {
     "dataSource": "mysqlDb",
@@ -34,5 +35,9 @@
   "Role": {
     "dataSource": "mysqlDb",
     "public": false
+  },
+  "Client": {
+    "dataSource": "mysqlDb",
+    "public": true
   }
 }
