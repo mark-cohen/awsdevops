@@ -1,0 +1,16 @@
+version: '3'
+
+# all of our services
+services:
+  api:
+    # point to the development image
+    build:
+      context: ./images
+      dockerfile: ApiDevDockerfile
+    # only put :cached if on MacOS
+    volumes:
+      - ./api:/usr/src/api:cached
+    ports:
+      # machine:container
+      - 3001:3000
+    command: yarn start
