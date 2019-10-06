@@ -1,1 +1,0 @@
-{"uuid":"507417de-f142-4865-bfcc-20a69c700ed8","parent":null,"pid":1805,"argv":["/usr/local/bin/node","/usr/local/bin/npm","run","test:unit"],"execArgv":[],"cwd":"/usr/src/api","time":1570310100541,"ppid":1798,"root":"806b9f3f-4e6e-4eca-8d43-191e3abcf880","coverageFilename":"/usr/src/api/.nyc_output/507417de-f142-4865-bfcc-20a69c700ed8.json","files":[]}
